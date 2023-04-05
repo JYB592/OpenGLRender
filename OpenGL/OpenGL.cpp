@@ -134,6 +134,8 @@ int main(void)
      
         //交换颜色缓冲，将窗口像素值画到屏幕上
         glfwSwapBuffers(YYWindow);
+
+        cout << "???????????" << endl;
     }
 
     //释放资源
