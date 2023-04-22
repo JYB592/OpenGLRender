@@ -1,5 +1,6 @@
 #pragma once
 #include<vector>
+#include<string>
 
 using namespace std;
 
@@ -20,7 +21,7 @@ private:
 
 public:
 	void init();
-	YYModel* addModel(float* pVertices, int pVSize);
+	YYModel* addModel(string const& path, bool gamma = false);
 	void Draw();
 
 protected:

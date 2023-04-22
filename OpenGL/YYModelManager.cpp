@@ -19,9 +19,9 @@ void YYModelManager::init()
 	YYModel::defShader = new YYShader("ShaderCode/shader.vs", "ShaderCode/shader.fs");
 }
 
-YYModel* YYModelManager::addModel(float* pVertices, int pVSize)
+YYModel* YYModelManager::addModel(string const& path, bool gamma)
 {
-	YYModel* mm = new YYModel(pVertices, pVSize);
+	YYModel* mm = new YYModel(path, gamma);
 	Models.push_back(mm);
 	return mm;
 }

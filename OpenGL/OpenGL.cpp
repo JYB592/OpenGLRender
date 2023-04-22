@@ -2,7 +2,6 @@
 #include <glad/glad.h> 
 #include <GLFW/glfw3.h>
 #define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
 #include <glm-0.9.9.8/glm/glm.hpp>
 #include <glm-0.9.9.8/glm/gtc/matrix_transform.hpp>
 #include <glm-0.9.9.8/glm/gtc/type_ptr.hpp>
@@ -100,16 +99,16 @@ int main(void)
     glEnable(GL_DEPTH_TEST);
 
     //添加灯模型
-    YYModelManager::GetInstance()->init();
-    YYModel* m1 = YYModelManager::GetInstance()->addModel(vertices, sizeof(vertices));
-    m1->Translate(0, 2, -5);
-    m1->Scale(0.5);
-    m1->SetEspecialShader("ShaderCode/shader.vs", "ShaderCode/lightShader.fs");
-    //添加其他模型
-    YYModel* m2 = YYModelManager::GetInstance()->addModel(vertices, sizeof(vertices));
-    m2->Translate(0, -2, -5);
-    m2->Rotate(30, 1, 0, 0);
-    m2->Scale(1.5);
+    //YYModelManager::GetInstance()->init();
+    //YYModel* m1 = YYModelManager::GetInstance()->addModel("");
+    //m1->Translate(0, 2, -5);
+    //m1->Scale(0.5);
+    //m1->SetEspecialShader("ShaderCode/shader.vs", "ShaderCode/lightShader.fs");
+    ////添加其他模型
+    //YYModel* m2 = YYModelManager::GetInstance()->addModel("");
+    //m2->Translate(0, -2, -5);
+    //m2->Rotate(30, 1, 0, 0);
+    //m2->Scale(1.5);
 
     //////////////////////////////////////////////////渲染循环
     while (!glfwWindowShouldClose(YYWindow))
