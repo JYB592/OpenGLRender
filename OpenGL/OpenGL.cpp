@@ -95,7 +95,7 @@ int main(void)
     //glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
 
-    //开启深度测试
+    //开启深度测试aaa
     glEnable(GL_DEPTH_TEST);
 
     //添加灯模型
